@@ -1,0 +1,20 @@
+/*
+Theme Name: Moklet Cinta Berbagi
+Author: Dot Or Pixel
+Author URI: http://dotorpixel.com
+*/
+/* -- Color --  */
+/* -- Content start here ^_^ -- */
+div.content h2.main-title { color: #FFF; font-size: 24px; padding-top: 15px; padding-bottom: 15px; background-color: #842a84; }
+div.content h2.main-home-title { margin-bottom: 0; }
+div.content div.wrapper-article article.main-home-article { background: #efefef; }
+div.content div.wrapper-article article.main-article { background: #efefef; border: 1px solid #842a84; border-bottom: 3px solid #842a84; }
+div.content div.wrapper-article footer.footer-article { background: #842a84; }
+div.content div.wrapper-article footer.footer-article a.more { text-decoration: none; padding: 10px; color: #FFF; background: #ff00ff; float: right; }
+
+/* -- Content end here ^_^ -- */
+/* -- Footer start here ^_^ -- */
+div.wrapper-footer { border-top: 5px solid #842a84; background-color: #efefef; }
+div.wrapper-footer footer.container p.bottom-footer { border-top: 1px solid #d1d1d1; }
+
+/* -- Footer end here ^_^ -- */

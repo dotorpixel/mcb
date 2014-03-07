@@ -2,11 +2,9 @@
 <html lang="en-US">
 <head>
 	<meta charset="UTF-8">
-	<title>
-	<?php wp_title( '|', true, 'right' );
-	bloginfo( 'name' );
-	?></title>
-	 <link href="<?php bloginfo('stylesheet_url');?>" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>	<?php wp_title( '|', true, 'right' ); bloginfo( 'name' );?> </title>
+	
 	<?php wp_head();?>
 </head>
 <body>
@@ -19,39 +17,38 @@
 	<nav>
 		<?php wp_nav_menu()?>
 	</nav>
-	<section id="maincontent">
-		<?php if(have_posts()) : while(have_posts()) : the_post();?>
-		<article>
-			<header>
-				<h1><?php the_title();?></h1>
-			</header>
-			
-			<?php the_content();?>
-			
-			
-		</article>
-		<?php 
-			endwhile;
-			else : 		
-		?>
-			<h1>Not found</h1>
-		<?php
-			endif;
-		?>
-		
-		<section id="comments">
-			<?php comments_template( '', true ); ?>
-		</section>
-	</section>
+
+	<div class="container content">
+			<?php if(have_posts()) : while(have_posts()) : the_post();?>
+		<div class="row">
+			<h2 class="col-md-12 main-title"><?php the_title();?></h2>
+		</div>
+		<div class="row">
+			<div class="col-md-9 wrapper-article">
+				<div class="row">
+					<article class="col-md-12 main-article">
+						<?php the_content();?>
+					</article>
+				</div>
+				
+				<section id="comments">
+					<?php comments_template( '', true ); ?>
+				</section>
+			</div>
+				<?php 
+					endwhile;
+					else : 		
+				?>
+					<h1>Not found</h1>
+				<?php
+					endif;
+				?>
 	
-	<aside>
-		<?php dynamic_sidebar();?>
-	</aside>
-	<footer>
-		<p>Copyright &copy; <?php echo date('Y');?> - <?php bloginfo('name');?></p>
-	</footer>
-	<?php
-		wp_footer();
-	?>
+			<aside class="col-md-3">
+				<?php dynamic_sidebar();?>
+			</aside>
+		</div>
+	</div>
+	<?php get_footer(); ?>
 </body>
 </html>

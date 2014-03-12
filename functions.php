@@ -13,3 +13,16 @@ function theme_name_scripts() {
 }
 
 add_action( 'wp_enqueue_scripts', 'theme_name_scripts' );
+
+$args = array(
+	'width'         => 940,
+	'height'        => 430,
+	'default-image' => get_template_directory_uri() . '/img/header.jpg',
+	'uploads'       => true,
+);
+
+/**
+ * Custom Header
+ * See https://codex.wordpress.org/Custom_Headers
+ */
+add_theme_support( 'custom-header', $args );

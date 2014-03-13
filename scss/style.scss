@@ -48,6 +48,49 @@ div.wrapper-banner{
 		-o-filter: blur(2px);
 		-ms-filter: blur(2px);
 	}
+	div.search{
+		position: relative;
+		float: right;
+		margin-top: 10px;
+		margin-right: 10px;
+		z-index: 2;
+		padding: 5px 0;width:230px; height:30px; left: 10px;line-height: 22px;
+		input {
+			position:absolute;
+        	width:0px;
+        	float:Left;
+        	margin-left:210px;
+        	top:8px;
+	        -webkit-transition: all 1s ease-in-out;
+	        -moz-transition: all 1s ease-in-out;
+	        -o-transition: all 1s ease-in-out;
+	        transition: all 1s ease-in-out;
+         	height:30px;
+         	line-height: 18px;
+         	font-style: italic;
+         	padding:0 2px 0 2px;
+         	font-size: 15px;
+         	outline: none; 
+         	-webkit-appearance: none; 
+         	border-radius: 5px 0 0 5px; 
+         	border-width:0;
+         }
+		.srch_btn{
+			position: absolute;
+			background: #efefef;
+			border-radius: 3px;
+			right: 10px;
+			font-size: 15px;
+			padding: 10px;
+		}
+	}
+	div.search:hover input,
+	div.search input:focus{
+		width: 200px; 
+		margin-left: 0px; 
+	}
+		
+
 }
 
 /* -- Content start here ^_^ -- */

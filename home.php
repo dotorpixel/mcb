@@ -18,6 +18,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12 wrapper-banner">
+				<?php get_search_form(); ?>
 				<h1 class="logo"><?php bloginfo('name');?></h1>
 				<a href="#" class="btn-donate">DONATE</a>
 				<img class="col-md-12" src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="" />

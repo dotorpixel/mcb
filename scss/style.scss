@@ -58,23 +58,44 @@ body{
 			}
 		}
 		li.fb-nav{
+			a:hover{
+				color: #133783;
+			}
 			a:before{
 				content: "\f09a";
 			}
 		}
 		li.tw-nav{
+			a:hover{
+				color: #55ACEE;
+			}
 			a:before{
 				content: "\f099";
 			}
 		}
 		li.gp-nav{
+			a:hover{
+				color:#D54636;
+			}
 			a:before{
 				content: "\f0d5";
 			}
 		}
 		li.ig-nav{
+			a:hover{
+				color: #392B23;
+			}
 			a:before{
 				content: "\f16d";
+			}
+		}
+	}
+	ul.navbar-right{
+		margin:20px 0 6px !important;
+		li{
+			a{
+				background: none;
+				padding: 5px;
 			}
 		}
 	}

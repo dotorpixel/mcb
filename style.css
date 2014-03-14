@@ -16,10 +16,16 @@ body { padding-top: 20px; font-family: Verdana, Geneva, sans-serif; }
 .navbar ul li.nav a { display: inline-block; font-family: FontAwesome; font-style: normal; font-weight: normal; line-height: 1; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
 .navbar ul li.home-nav a { font-size: 20px; }
 .navbar ul li.home-nav a:before { content: "\f015"; }
+.navbar ul li.fb-nav a:hover { color: #133783; }
 .navbar ul li.fb-nav a:before { content: "\f09a"; }
+.navbar ul li.tw-nav a:hover { color: #55ACEE; }
 .navbar ul li.tw-nav a:before { content: "\f099"; }
+.navbar ul li.gp-nav a:hover { color: #D54636; }
 .navbar ul li.gp-nav a:before { content: "\f0d5"; }
+.navbar ul li.ig-nav a:hover { color: #392B23; }
 .navbar ul li.ig-nav a:before { content: "\f16d"; }
+.navbar ul.navbar-right { margin: 20px 0 6px !important; }
+.navbar ul.navbar-right li a { background: none; padding: 5px; }
 
 /* -- Navigation end here ^_^ -- */
 /* -- Header start here ^_^ --*/

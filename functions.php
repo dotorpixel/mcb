@@ -28,6 +28,16 @@ $args = array(
  */
 add_theme_support( 'custom-header', $args );
 
+/*
+ * Register for navigation menu
+ * See http://codex.wordpress.org/Navigation_Menus
+ */
+function register_my_menu() {
+    register_nav_menu( 'header', 'Header Menu' );
+    register_nav_menu( 'sosmed', 'Sosial Media Menu' );
+}
+add_action( 'init', 'register_my_menu' );
+
 /**
  * Custom Search
  * See https://codex.wordpress.org/Function_Reference/get_search_form

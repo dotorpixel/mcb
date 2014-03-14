@@ -7,6 +7,38 @@ Author URI: http://dotorpixel.com
 /* -- Color --  */
 $color-purple : #842a84;
 
+li.nav{
+	a{
+		display: inline-block;
+		font-family: FontAwesome;
+		font-style: normal;
+		font-weight: normal;
+		line-height: 1;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	}
+}
+li.fb-nav{
+	a:before{
+		content: "\f09a";
+	}
+}
+li.tw-nav{
+	a:before{
+		content: "\f099";
+	}
+}
+li.gp-nav{
+	a:before{
+		content: "\f0d5";
+	}
+}
+li.ig-nav{
+	a:before{
+		content: "\f16d";
+	}
+}
+
 /* -- Header start here ^_^ --*/
 div.wrapper-banner{
 	height: 430px;
@@ -56,6 +88,7 @@ div.wrapper-banner{
 		z-index: 2;
 		padding: 5px 0;width:230px; height:30px; left: 10px;line-height: 22px;
 		input {
+			text-decoration: none;
 			position:absolute;
         	width:0px;
         	float:Left;

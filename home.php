@@ -64,6 +64,9 @@
 					<center class="row"><h2 class="col-md-12">Mohon Maaf Data Artikel Belum Tersedia ^_^</h2></center>
 				<?php endif; ?>
 		</div>
+		<div class="pagination hidden">
+			<?php posts_nav_link(); ?> 
+		</div>
 	</div>
 	<?php get_footer(); ?>
 </body>

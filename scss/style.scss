@@ -4,40 +4,82 @@ Author: Dot Or Pixel
 Author URI: http://dotorpixel.com
 */
 
+/* -- Load google font -- */
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab);
+
 /* -- Color --  */
 $color-purple : #842a84;
 
-li.nav{
-	a{
-		display: inline-block;
-		font-family: FontAwesome;
-		font-style: normal;
-		font-weight: normal;
-		line-height: 1;
-		-webkit-font-smoothing: antialiased;
-		-moz-osx-font-smoothing: grayscale;
+body{
+	padding-top: 20px;
+	font-family: Verdana, Geneva, sans-serif;
+}
+
+/* -- Navigation start here ^_^ -- */
+.navbar{
+	border:0;
+	margin-bottom: 0;
+	border-radius: 0;
+	border-bottom: 5px solid $color-purple;
+	ul{
+		li{
+			a{
+				color: #333333;
+				font-family: 'Roboto Slab', serif;
+			}
+			a:hover{
+				color: #FFF;
+				background: $color-purple;
+			}
+		}
+		li.current-menu-item{
+			a{
+				color: #FFF;
+				background: $color-purple;
+			}
+		}
+		li.nav{
+			a{
+				display: inline-block;
+				font-family: FontAwesome;
+				font-style: normal;
+				font-weight: normal;
+				line-height: 1;
+				-webkit-font-smoothing: antialiased;
+				-moz-osx-font-smoothing: grayscale;
+			}
+		}
+		li.home-nav{
+			a{
+				font-size: 20px;
+			}
+			a:before{
+				content: "\f015";
+			}
+		}
+		li.fb-nav{
+			a:before{
+				content: "\f09a";
+			}
+		}
+		li.tw-nav{
+			a:before{
+				content: "\f099";
+			}
+		}
+		li.gp-nav{
+			a:before{
+				content: "\f0d5";
+			}
+		}
+		li.ig-nav{
+			a:before{
+				content: "\f16d";
+			}
+		}
 	}
 }
-li.fb-nav{
-	a:before{
-		content: "\f09a";
-	}
-}
-li.tw-nav{
-	a:before{
-		content: "\f099";
-	}
-}
-li.gp-nav{
-	a:before{
-		content: "\f0d5";
-	}
-}
-li.ig-nav{
-	a:before{
-		content: "\f16d";
-	}
-}
+/* -- Navigation end here ^_^ -- */
 
 /* -- Header start here ^_^ --*/
 div.wrapper-banner{

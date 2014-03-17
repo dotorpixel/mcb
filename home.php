@@ -58,10 +58,10 @@
 				<footer class="col-md-12 footer-article">
 					<div class="row">
 						<span class="date">
-							<i class="fa fa-calendar"></i>
+							<i class="fa fa-calendar"></i>&nbsp;
 							<?php the_date('d M y'); ?>
 						</span>
-						<a href="#" class="more">Read More</a>
+						<a href="<?php the_permalink() ?>" class="more">Read More</a>
 						<div class="clearfix"></div>
 					</div>
 				</footer>

@@ -5,7 +5,7 @@ Author URI: http://dotorpixel.com
 */
 
 /* -- Load google font -- */
-@import url(http://fonts.googleapis.com/css?family=Roboto+Slab);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,300);
 
 /* -- Color --  */
 $color-purple : #842a84;
@@ -213,6 +213,7 @@ div.content{
 		font-size: 24px;
 		padding-top: 15px;
 		padding-bottom: 15px;
+		font-weight: 300;
 		background-color: $color-purple;
 		font-family: 'Roboto Slab', serif;
 	}
@@ -231,9 +232,10 @@ div.content{
 				border-bottom: 3px solid $color-purple;
 			}
 			footer.footer-article{
+				font-size: 14px;
+				font-weight: 300;
 				background: $color-purple;
 				font-family: 'Roboto Slab', serif;
-				font-size: 14px;
 				a.more{
 					text-decoration: none;
 					padding: 10px;
@@ -241,10 +243,14 @@ div.content{
 					background: #ff00ff;
 					float: right;
 				}
+				a.more:hover{
+					color: #FFF;
+					background: $color-purple;
+				}
 				span.date{
+					color: #FFF;
 					float: left;
 					padding: 10px;
-					color: #FFF;
 				}
 			}
 		}

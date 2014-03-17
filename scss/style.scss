@@ -4,8 +4,207 @@ Author: Dot Or Pixel
 Author URI: http://dotorpixel.com
 */
 
+/* -- Load google font -- */
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,300);
+
 /* -- Color --  */
 $color-purple : #842a84;
+
+body{
+	padding-top: 20px;
+	font-family: Verdana, Geneva, sans-serif;
+}
+a{
+	-webkit-transition: all 800ms ease;
+	-moz-transition: all 800ms ease;
+	-ms-transition: all 800ms ease;
+	-o-transition: all 800ms ease;
+	transition: all 800ms ease;
+}
+
+/* -- Navigation start here ^_^ -- */
+.navbar{
+	border:0;
+	min-height: 45px;
+	margin-bottom: 0;
+	border-radius: 0;
+	border-bottom: 5px solid $color-purple;
+	ul{
+		li{
+			a{
+				padding: 10px;
+				color: #333333;
+				font-family: 'Roboto Slab', serif;
+			}
+			a:hover{
+				color: #FFF;
+				background: $color-purple;
+			}
+		}
+		li.current-menu-item{
+			a{
+				color: #FFF;
+				background: $color-purple;
+			}
+		}
+		li.nav{
+			a{
+				display: inline-block;
+				font-family: FontAwesome;
+				font-style: normal;
+				font-weight: normal;
+				line-height: 1;
+				-webkit-font-smoothing: antialiased;
+				-moz-osx-font-smoothing: grayscale;
+			}
+		}
+		li.home-nav{
+			a{
+				padding-right: 5px;
+				font-size: 20px;
+			}
+			a:before{
+				content: "\f015";
+			}
+		}
+		li.fb-nav{
+			a:hover{
+				color: #133783;
+			}
+			a:before{
+				content: "\f09a";
+			}
+		}
+		li.tw-nav{
+			a:hover{
+				color: #55ACEE;
+			}
+			a:before{
+				content: "\f099";
+			}
+		}
+		li.gp-nav{
+			a:hover{
+				color:#D54636;
+			}
+			a:before{
+				content: "\f0d5";
+			}
+		}
+		li.ig-nav{
+			a:hover{
+				color: #392B23;
+			}
+			a:before{
+				content: "\f16d";
+			}
+		}
+	}
+	ul.navbar-right{
+		margin:10px 0 0 !important;
+		li{
+			a{
+				background: none;
+				padding: 5px;
+			}
+		}
+	}
+}
+/* -- Navigation end here ^_^ -- */
+
+/* -- Header start here ^_^ --*/
+div.wrapper-banner{
+	height: 430px;
+	position: relative;
+	h1.logo{
+		z-index: 2;
+		width: 155px;
+		height: 155px;
+		margin: 50px auto 0;
+		position: relative;
+		border-radius: 150px;
+		border:3px solid #FFF;
+		text-indent: -99999px;
+		background: url('css/img/logo.png') #FFF no-repeat;
+	}
+	a.btn-donate{
+		z-index: 2;
+		font-size: 14px;
+		margin: 50px auto 0;
+		position: relative;
+		padding:5px;
+		display: block;
+		width: 80px;
+		color: #FFF;
+		border-radius: 5px;
+		text-align: center;
+		background: #34b103;
+		border:1px solid #FFF;
+		font-family: 'Roboto Slab', serif;
+	}
+	a.btn-donate:hover{
+		color: #34b103;
+		background: #FFF;
+		text-decoration: none;
+		border:1px solid #34b103;
+	}
+	img{
+		top: 0;
+		left: 0;
+		z-index: 1;
+		position: absolute;
+		filter: blur(2px);
+		// Browser Specific
+		-webkit-filter: blur(2px);
+		-moz-filter: blur(2px);
+		-o-filter: blur(2px);
+		-ms-filter: blur(2px);
+	}
+	div.search{
+		position: relative;
+		float: right;
+		margin-top: 10px;
+		margin-right: 10px;
+		z-index: 2;
+		padding: 5px 0;width:230px; height:30px; left: 10px;line-height: 22px;
+		input {
+			text-decoration: none;
+			position:absolute;
+        	width:0px;
+        	float:Left;
+        	margin-left:210px;
+        	top:8px;
+	        -webkit-transition: all 1s ease-in-out;
+	        -moz-transition: all 1s ease-in-out;
+	        -o-transition: all 1s ease-in-out;
+	        transition: all 1s ease-in-out;
+         	height:30px;
+         	line-height: 18px;
+         	font-style: italic;
+         	padding:0 2px 0 2px;
+         	font-size: 15px;
+         	outline: none; 
+         	-webkit-appearance: none; 
+         	border-radius: 5px 0 0 5px; 
+         	border-width:0;
+         }
+		.srch_btn{
+			position: absolute;
+			background: #efefef;
+			border-radius: 3px;
+			right: 10px;
+			font-size: 15px;
+			padding: 10px;
+		}
+	}
+	div.search:hover input,
+	div.search input:focus{
+		width: 200px; 
+		margin-left: 0px; 
+	}
+		
+
+}
 
 /* -- Content start here ^_^ -- */
 div.content{
@@ -14,28 +213,63 @@ div.content{
 		font-size: 24px;
 		padding-top: 15px;
 		padding-bottom: 15px;
+		font-weight: 300;
 		background-color: $color-purple;
+		font-family: 'Roboto Slab', serif;
 	}
 	h2.main-home-title{
 		margin-bottom: 0;
 	}
-	div.wrapper-article{
-		article.main-home-article{
-			background: #efefef;
+	div.wrapper-articles{
+		padding-bottom: 30px;
+		div.wrapper-article{
+			article.main-home-article{
+				background: #efefef;
+			}
+			article.main-article{
+				background: #efefef;
+				border: 1px solid $color-purple;
+				border-bottom: 3px solid $color-purple;
+			}
+			footer.footer-article{
+				font-size: 14px;
+				font-weight: 300;
+				background: $color-purple;
+				font-family: 'Roboto Slab', serif;
+				a.more{
+					text-decoration: none;
+					padding: 10px;
+					color: #FFF;
+					background: #ff00ff;
+					float: right;
+				}
+				a.more:hover{
+					color: #FFF;
+					background: $color-purple;
+				}
+				span.date{
+					color: #FFF;
+					float: left;
+					padding: 10px;
+				}
+			}
 		}
-		article.main-article{
-			background: #efefef;
-			border: 1px solid $color-purple;
-			border-bottom: 3px solid $color-purple;
-		}
-		footer.footer-article{
-			background: $color-purple;
-			a.more{
-				text-decoration: none;
-				padding: 10px;
-				color: #FFF;
-				background: #ff00ff;
-				float: right;
+		#infscr-loading{
+			width: 100%;
+			height: 30px;
+			position: absolute;
+			bottom: 0;
+			text-align: center;
+			img{
+				display: none !important;
+			}
+			.loader{
+				padding: 5px 0;
+				color: #333333;
+				img{
+					display: inline !important;
+					margin-right: 5px;
+				}
 			}
 		}
 	}

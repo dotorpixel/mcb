@@ -14,16 +14,25 @@ body{
 	padding-top: 20px;
 	font-family: Verdana, Geneva, sans-serif;
 }
+a{
+	-webkit-transition: all 800ms ease;
+	-moz-transition: all 800ms ease;
+	-ms-transition: all 800ms ease;
+	-o-transition: all 800ms ease;
+	transition: all 800ms ease;
+}
 
 /* -- Navigation start here ^_^ -- */
 .navbar{
 	border:0;
+	min-height: 45px;
 	margin-bottom: 0;
 	border-radius: 0;
 	border-bottom: 5px solid $color-purple;
 	ul{
 		li{
 			a{
+				padding: 10px;
 				color: #333333;
 				font-family: 'Roboto Slab', serif;
 			}
@@ -51,6 +60,7 @@ body{
 		}
 		li.home-nav{
 			a{
+				padding-right: 5px;
 				font-size: 20px;
 			}
 			a:before{
@@ -91,7 +101,7 @@ body{
 		}
 	}
 	ul.navbar-right{
-		margin:20px 0 6px !important;
+		margin:10px 0 0 !important;
 		li{
 			a{
 				background: none;
@@ -130,6 +140,13 @@ div.wrapper-banner{
 		text-align: center;
 		background: #34b103;
 		border:1px solid #FFF;
+		font-family: 'Roboto Slab', serif;
+	}
+	a.btn-donate:hover{
+		color: #34b103;
+		background: #FFF;
+		text-decoration: none;
+		border:1px solid #34b103;
 	}
 	img{
 		top: 0;
@@ -197,6 +214,7 @@ div.content{
 		padding-top: 15px;
 		padding-bottom: 15px;
 		background-color: $color-purple;
+		font-family: 'Roboto Slab', serif;
 	}
 	h2.main-home-title{
 		margin-bottom: 0;
@@ -214,12 +232,19 @@ div.content{
 			}
 			footer.footer-article{
 				background: $color-purple;
+				font-family: 'Roboto Slab', serif;
+				font-size: 14px;
 				a.more{
 					text-decoration: none;
 					padding: 10px;
 					color: #FFF;
 					background: #ff00ff;
 					float: right;
+				}
+				span.date{
+					float: left;
+					padding: 10px;
+					color: #FFF;
 				}
 			}
 		}

@@ -56,3 +56,10 @@ function my_search_form( $form ) {
 }
 
 add_filter( 'get_search_form', 'my_search_form' );
+
+/*
+ * Enable support for Post-Thumbnails.
+ * See http://codex.wordpress.org/Post_Formats
+ */
+add_theme_support( 'post-thumbnails' );
+set_post_thumbnail_size( 455, 999999 );

@@ -24,8 +24,10 @@
 
 				    <!-- Collect the nav links, forms, and other content for toggling -->
 				    <div class="row collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				    	<div class="static-link">
+				    		<a class="fa fa-home"></a>
+				    	</div>
 				    	<?php wp_nav_menu( array( 'theme_location' => 'header','menu_class' => 'nav navbar-nav' ) ); ?>
-				    	<?php wp_nav_menu( array( 'theme_location' => 'sosmed','menu_class' => 'nav navbar-nav navbar-right' ) ); ?>
 				  	</div>
 				</nav>
 			</div>
@@ -37,7 +39,9 @@
 				<?php get_search_form(); ?>
 				<h1 class="logo"><?php bloginfo('name');?></h1>
 				<a href="#" class="btn-donate">DONATE</a>
-				<img class="col-md-12" src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="" />
+				<div class="clipper">
+					<img class="col-md-12" src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="" />
+				</div>
 			</div>
 		</div>
 	</div>
@@ -45,7 +49,7 @@
 		<div class="row wrapper-articles">
 		<?php if(have_posts()) : while(have_posts()) : the_post();?>
 			<div class="col-md-6 wrapper-article">
-				<h2 class="col-md-12 main-title main-home-title"><?php the_title();?></h2>
+				<h2 class="col-md-12 main-title main-home-title" title="<?php the_title();?>"><?php the_title();?></h2>
 				<?php
 					// check if the post has a Post Thumbnail assigned to it.
 					if ( has_post_thumbnail() ) {

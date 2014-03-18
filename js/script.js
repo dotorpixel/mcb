@@ -1,6 +1,6 @@
 $(document).ready(function () {
    
-    $(".wrapper-articles").masonry({
+    $(".masonry").masonry({
         itemSelector: '.wrapper-article',
         isAnimated: true,
         columnWidth: '.wrapper-article'

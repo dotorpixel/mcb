@@ -6,7 +6,7 @@ Author URI: http://dotorpixel.com
 */
 /* -- Load google font -- */
 /* -- Color --  */
-body { padding-top: 20px; font-family: Verdana, Geneva, sans-serif; }
+body { padding-top: 20px; background-color: #f7f7f7; font-family: Verdana, Geneva, sans-serif; }
 
 a { -webkit-transition: all 800ms ease; -moz-transition: all 800ms ease; -ms-transition: all 800ms ease; -o-transition: all 800ms ease; transition: all 800ms ease; }
 
@@ -42,11 +42,11 @@ div.wrapper-banner div.search .srch_btn { position: absolute; background: #efefe
 div.wrapper-banner div.search:hover input, div.wrapper-banner div.search input:focus { width: 200px; margin-left: 0px; }
 
 /* -- Content start here ^_^ -- */
-div.content h2.main-title { color: #FFF; font-size: 24px; padding-top: 15px; padding-bottom: 15px; font-weight: 300; background-color: #842a84; font-family: 'Roboto Slab', serif; }
-div.content h2.main-home-title { margin-bottom: 0; }
+div.content h2.main-title { color: #FFF; font-size: 24px; padding-top: 15px; padding-bottom: 15px; font-weight: 300; background-color: #842a84; font-family: 'Roboto Slab', serif; margin-bottom: 0; }
+div.content img.wrapper-img { padding-top: 15px; padding-bottom: 15px; background-color: #FFF; }
 div.content div.wrapper-articles { padding-bottom: 30px; }
-div.content div.wrapper-articles div.wrapper-article article.main-home-article { background: #efefef; }
-div.content div.wrapper-articles div.wrapper-article article.main-article { background: #efefef; border: 1px solid #842a84; border-bottom: 3px solid #842a84; }
+div.content div.wrapper-articles div.wrapper-article article.main-article { color: #333333; padding-top: 15px; background: #efefef; }
+div.content div.wrapper-articles div.wrapper-article article.main-event-article { background: #efefef; border: 1px solid #842a84; border-bottom: 3px solid #842a84; }
 div.content div.wrapper-articles div.wrapper-article footer.footer-article { font-size: 14px; font-weight: 300; background: #842a84; font-family: 'Roboto Slab', serif; }
 div.content div.wrapper-articles div.wrapper-article footer.footer-article a.more { text-decoration: none; padding: 10px; color: #FFF; background: #ff00ff; float: right; }
 div.content div.wrapper-articles div.wrapper-article footer.footer-article a.more:hover { color: #FFF; background: #842a84; }

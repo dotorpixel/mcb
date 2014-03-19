@@ -12,6 +12,7 @@ $color-purple : #842a84;
 
 body{
 	padding-top: 20px;
+	background-color: #f7f7f7;
 	font-family: Verdana, Geneva, sans-serif;
 }
 a{
@@ -243,21 +244,26 @@ div.content{
 		font-weight: 300;
 		background-color: $color-purple;
 		font-family: 'Roboto Slab', serif;
-	}
-	h2.main-home-title{
 		margin-bottom: 0;
+	}
+	img.wrapper-img{
+		padding-top: 15px;
+		padding-bottom: 15px;
+		background-color: #FFF;
 	}
 	div.wrapper-articles{
 		padding-bottom: 30px;
 		div.wrapper-article{
-			article.main-home-article{
+			article.main-article{
+				color: #333333;
+				padding-top: 15px;
 				background: #efefef;
 
 				p {
 					padding-top: 10px;
 				}
 			}
-			article.main-article{
+			article.main-event-article{
 				background: #efefef;
 				border: 1px solid $color-purple;
 				border-bottom: 3px solid $color-purple;
@@ -278,10 +284,14 @@ div.content{
 					color: #FFF;
 					background: $color-purple;
 				}
+				span.tags,
 				span.date{
 					color: #FFF;
 					float: left;
 					padding: 10px;
+					a{
+						color:#FFF;
+					}
 				}
 			}
 		}

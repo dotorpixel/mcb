@@ -63,3 +63,5 @@ add_filter( 'get_search_form', 'my_search_form' );
  */
 add_theme_support( 'post-thumbnails' );
 set_post_thumbnail_size( 455, 999999 );
+// additional image sizes
+add_image_size( 'post-head', 940, 999999 );

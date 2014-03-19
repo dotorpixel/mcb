@@ -3,7 +3,7 @@
 		<div class="row wrapper-articles masonry">
 		<?php if(have_posts()) : while(have_posts()) : the_post();?>
 			<div class="col-md-6 wrapper-article">
-				<h2 class="col-md-12 main-title"><?php the_title();?></h2>
+				<h2 class="col-md-12 main-title main-home-title" title="<?php the_title();?>"><?php the_title();?></h2>
 				<?php
 					// check if the post has a Post Thumbnail assigned to it.
 					if ( has_post_thumbnail() ) {

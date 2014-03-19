@@ -19,6 +19,20 @@
 							<i class="fa fa-calendar"></i>&nbsp;
 							<?php the_date('d M y'); ?>
 						</span>
+						<span class="tags">
+							<i class="fa fa-tags"></i>&nbsp;
+							<?php
+								$tags = get_tags();
+								$html = '';
+								foreach ( $tags as $tag ) {
+									$tag_link = get_tag_link( $tag->term_id );
+									$html .= ($html) ? ',&nbsp;' : '';
+									$html .= "<a href='{$tag_link}' title='{$tag->name} Tag' class='{$tag->slug}'>";
+									$html .= "{$tag->name}</a>";
+								}
+								echo $html;
+							?>
+						</span>
 						<div class="clearfix"></div>
 					</div>
 				</footer>
@@ -29,12 +43,11 @@
 				?>
 					<center class="row"><h2 class="col-md-12">Mohon Maaf Data Artikel Belum Tersedia ^_^</h2></center>
 				<?php endif; ?>
-			<section class="comments">
+		</div>
+		<div class="row">
+			<section class="col-md-12 comments">
 				<?php comments_template( '', true ); ?>
 			</section>
-		</div>
-		<div class="pagination hidden">
-			<?php posts_nav_link(); ?> 
 		</div>
 	</div>
 <?php get_footer(); ?>

@@ -253,10 +253,14 @@ div.content{
 					color: #FFF;
 					background: $color-purple;
 				}
+				span.tags,
 				span.date{
 					color: #FFF;
 					float: left;
 					padding: 10px;
+					a{
+						color:#FFF;
+					}
 				}
 			}
 		}

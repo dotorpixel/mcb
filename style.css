@@ -8,6 +8,7 @@ Author URI: http://dotorpixel.com
 /* -- Color --  */
 body {
   padding-top: 20px;
+  background-color: #f7f7f7;
   font-family: Verdana, Geneva, sans-serif;
 }
 
@@ -219,20 +220,25 @@ div.content h2.main-title {
   font-weight: 300;
   background-color: #842a84;
   font-family: 'Roboto Slab', serif;
-}
-div.content h2.main-home-title {
   margin-bottom: 0;
+}
+div.content img.wrapper-img {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: #FFF;
 }
 div.content div.wrapper-articles {
   padding-bottom: 30px;
 }
-div.content div.wrapper-articles div.wrapper-article article.main-home-article {
+div.content div.wrapper-articles div.wrapper-article article.main-article {
+  color: #333333;
+  padding-top: 15px;
   background: #efefef;
 }
-div.content div.wrapper-articles div.wrapper-article article.main-home-article p {
+div.content div.wrapper-articles div.wrapper-article article.main-article p {
   padding-top: 10px;
 }
-div.content div.wrapper-articles div.wrapper-article article.main-article {
+div.content div.wrapper-articles div.wrapper-article article.main-event-article {
   background: #efefef;
   border: 1px solid #842a84;
   border-bottom: 3px solid #842a84;
@@ -254,10 +260,15 @@ div.content div.wrapper-articles div.wrapper-article footer.footer-article a.mor
   color: #FFF;
   background: #842a84;
 }
+div.content div.wrapper-articles div.wrapper-article footer.footer-article span.tags,
 div.content div.wrapper-articles div.wrapper-article footer.footer-article span.date {
   color: #FFF;
   float: left;
   padding: 10px;
+}
+div.content div.wrapper-articles div.wrapper-article footer.footer-article span.tags a,
+div.content div.wrapper-articles div.wrapper-article footer.footer-article span.date a {
+  color: #FFF;
 }
 div.content div.wrapper-articles #infscr-loading {
   width: 100%;

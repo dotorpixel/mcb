@@ -6,297 +6,63 @@ Author URI: http://dotorpixel.com
 */
 /* -- Load google font -- */
 /* -- Color --  */
-body {
-  padding-top: 20px;
-  background-color: #f7f7f7;
-  font-family: Verdana, Geneva, sans-serif;
-}
+body { padding-top: 20px; background-color: #f7f7f7; font-family: Verdana, Geneva, sans-serif; }
 
-a {
-  -webkit-transition: all 800ms ease;
-  -moz-transition: all 800ms ease;
-  -ms-transition: all 800ms ease;
-  -o-transition: all 800ms ease;
-  transition: all 800ms ease;
-}
+a { -webkit-transition: all 800ms ease; -moz-transition: all 800ms ease; -ms-transition: all 800ms ease; -o-transition: all 800ms ease; transition: all 800ms ease; }
+
+.nocomments { display: none; }
 
 /* -- Navigation start here ^_^ -- */
-.navbar {
-  border: 0;
-  min-height: 34px;
-  margin-bottom: 0;
-  border-radius: 0;
-  border-bottom: 5px solid #842a84;
-}
-.navbar .static-link {
-  float: left;
-}
-.navbar .static-link a {
-  background-color: #842a84;
-  color: white;
-  padding-top: 8px;
-  height: 39px;
-  width: 50px;
-  font-size: 24px;
-  text-align: center;
-  margin-top: -10px;
-}
-.navbar .static-link a:hover {
-  text-decoration: none;
-}
-.navbar ul {
-  list-style: none;
-  margin: 0px;
-  padding: 0px;
-}
-.navbar ul li {
-  display: inline-block;
-}
-.navbar ul li a {
-  padding: 10px;
-  color: #333333;
-  font-family: 'Roboto Slab', serif;
-}
-.navbar ul li a:hover {
-  color: #FFF;
-  background: #842a84;
-  text-decoration: none;
-}
-.navbar ul li.current-menu-item a {
-  color: #FFF;
-  background: #842a84;
-}
-.navbar ul li.nav a {
-  display: inline-block;
-  font-family: FontAwesome;
-  font-style: normal;
-  font-weight: normal;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-.navbar ul li.home-nav a {
-  padding-right: 5px;
-  font-size: 20px;
-}
-.navbar ul li.home-nav a:before {
-  content: "\f015";
-}
-.navbar ul li.fb-nav a:hover {
-  color: #133783;
-}
-.navbar ul li.fb-nav a:before {
-  content: "\f09a";
-}
-.navbar ul li.tw-nav a:hover {
-  color: #55ACEE;
-}
-.navbar ul li.tw-nav a:before {
-  content: "\f099";
-}
-.navbar ul li.gp-nav a:hover {
-  color: #D54636;
-}
-.navbar ul li.gp-nav a:before {
-  content: "\f0d5";
-}
-.navbar ul li.ig-nav a:hover {
-  color: #392B23;
-}
-.navbar ul li.ig-nav a:before {
-  content: "\f16d";
-}
-.navbar ul.navbar-right {
-  margin: 10px 0 0 !important;
-}
-.navbar ul.navbar-right display none
-li a {
-  background: none;
-  padding: 5px;
-}
+.navbar { border: 0; min-height: 45px; margin-bottom: 0; border-radius: 0; border-bottom: 5px solid #842a84; }
+.navbar ul li a { padding: 10px; color: #333333; font-family: 'Roboto Slab', serif; }
+.navbar ul li a:hover { color: #FFF; background: #842a84; }
+.navbar ul li.current-menu-item a { color: #FFF; background: #842a84; }
+.navbar ul li.nav a { display: inline-block; font-family: FontAwesome; font-style: normal; font-weight: normal; line-height: 1; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+.navbar ul li.home-nav a { padding-right: 5px; font-size: 20px; }
+.navbar ul li.home-nav a:before { content: "\f015"; }
+.navbar ul li.fb-nav a:hover { color: #133783; }
+.navbar ul li.fb-nav a:before { content: "\f09a"; }
+.navbar ul li.tw-nav a:hover { color: #55ACEE; }
+.navbar ul li.tw-nav a:before { content: "\f099"; }
+.navbar ul li.gp-nav a:hover { color: #D54636; }
+.navbar ul li.gp-nav a:before { content: "\f0d5"; }
+.navbar ul li.ig-nav a:hover { color: #392B23; }
+.navbar ul li.ig-nav a:before { content: "\f16d"; }
+.navbar ul.navbar-right { margin: 10px 0 0 !important; }
+.navbar ul.navbar-right li a { background: none; padding: 5px; }
 
 /* -- Navigation end here ^_^ -- */
 /* -- Header start here ^_^ --*/
-div.wrapper-banner {
-  height: 430px;
-  position: relative;
-}
-div.wrapper-banner h1.logo {
-  z-index: 2;
-  width: 152px;
-  height: 152px;
-  margin: 105px auto 0;
-  position: relative;
-  border-radius: 150px;
-  border: 1px solid #FFF;
-  text-indent: -99999px;
-  background: url("css/img/logo.png") white no-repeat;
-}
-div.wrapper-banner a.btn-donate {
-  z-index: 2;
-  font-size: 14px;
-  margin: 22px auto 0;
-  position: relative;
-  padding: 5px;
-  display: block;
-  width: 90px;
-  color: #FFF;
-  border-radius: 5px;
-  text-align: center;
-  background: #34b103;
-  border: 1px solid #FFF;
-  font-family: 'Roboto Slab', serif;
-}
-div.wrapper-banner a.btn-donate:hover {
-  color: #34b103;
-  background: #FFF;
-  text-decoration: none;
-  border: 1px solid #34b103;
-}
-div.wrapper-banner img {
-  top: 0;
-  left: 0;
-  z-index: 1;
-  position: absolute;
-  filter: blur(2px);
-  -webkit-filter: blur(2px);
-  -moz-filter: blur(2px);
-  -o-filter: blur(2px);
-  -ms-filter: blur(2px);
-}
-div.wrapper-banner div.search {
-  position: relative;
-  float: right;
-  margin-top: 5px;
-  margin-right: 10px;
-  z-index: 2;
-  padding: 5px 0;
-  width: 230px;
-  height: 30px;
-  left: 10px;
-  line-height: 22px;
-}
-div.wrapper-banner div.search input {
-  text-decoration: none;
-  position: absolute;
-  width: 0px;
-  float: Left;
-  margin-left: 205px;
-  top: 5px;
-  -webkit-transition: all 1s ease-in-out;
-  -moz-transition: all 1s ease-in-out;
-  -o-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out;
-  height: 30px;
-  line-height: 18px;
-  font-style: italic;
-  padding: 0 2px 0 9px;
-  font-size: 15px;
-  outline: none;
-  -webkit-appearance: none;
-  border-radius: 5px 0 0 5px;
-  border-width: 0;
-}
-div.wrapper-banner div.search .srch_btn {
-  position: absolute;
-  background: #efefef;
-  border-radius: 5px;
-  right: 10px;
-  font-size: 15px;
-  padding: 8px 8px 7px;
-}
-div.wrapper-banner div.search:hover input,
-div.wrapper-banner div.search input:focus {
-  width: 200px;
-  margin-left: 0px;
-}
+div.wrapper-banner { height: 430px; position: relative; }
+div.wrapper-banner h1.logo { z-index: 2; width: 152px; height: 152px; margin: 105px auto 0; position: relative; border-radius: 150px; border: 1px solid #FFF; text-indent: -99999px; background: url("css/img/logo.png") white no-repeat; }
+div.wrapper-banner a.btn-donate { z-index: 2; font-size: 14px; margin: 22px auto 0; position: relative; padding: 5px; display: block; width: 90px; color: #FFF; border-radius: 5px; text-align: center; background: #34b103; border: 1px solid #FFF; font-family: 'Roboto Slab', serif; }
+div.wrapper-banner a.btn-donate:hover { color: #34b103; background: #FFF; text-decoration: none; border: 1px solid #34b103; }
+div.wrapper-banner img { top: 0; left: 0; z-index: 1; position: absolute; filter: blur(2px); -webkit-filter: blur(2px); -moz-filter: blur(2px); -o-filter: blur(2px); -ms-filter: blur(2px); }
+div.wrapper-banner div.search { position: relative; float: right; margin-top: 5px; margin-right: 10px; z-index: 2; padding: 5px 0; width: 230px; height: 30px; left: 10px; line-height: 22px; }
+div.wrapper-banner div.search input { text-decoration: none; position: absolute; width: 0px; float: Left; margin-left: 205px; top: 5px; -webkit-transition: all 1s ease-in-out; -moz-transition: all 1s ease-in-out; -o-transition: all 1s ease-in-out; transition: all 1s ease-in-out; height: 30px; line-height: 18px; font-style: italic; padding: 0 2px 0 9px; font-size: 15px; outline: none; -webkit-appearance: none; border-radius: 5px 0 0 5px; border-width: 0; }
+div.wrapper-banner div.search .srch_btn { position: absolute; background: #efefef; border-radius: 5px; right: 10px; font-size: 15px; padding: 8px 8px 7px; }
+div.wrapper-banner div.search:hover input, div.wrapper-banner div.search input:focus { width: 200px; margin-left: 0px; }
 
 /* -- Content start here ^_^ -- */
-div.content h2.main-title {
-  color: #FFF;
-  font-size: 18px;
-  padding-top: 16px;
-  padding-bottom: 15px;
-  font-weight: 300;
-  background-color: #842a84;
-  font-family: 'Roboto Slab', serif;
-  margin-bottom: 0;
-}
-div.content img.wrapper-img {
-  padding-top: 15px;
-  padding-bottom: 15px;
-  background-color: #FFF;
-}
-div.content div.wrapper-articles {
-  padding-bottom: 30px;
-}
-div.content div.wrapper-articles div.wrapper-article article.main-article {
-  color: #333333;
-  padding-top: 15px;
-  background: #efefef;
-}
-div.content div.wrapper-articles div.wrapper-article article.main-article p {
-  padding-top: 10px;
-}
-div.content div.wrapper-articles div.wrapper-article article.main-event-article {
-  background: #efefef;
-  border: 1px solid #842a84;
-  border-bottom: 3px solid #842a84;
-}
-div.content div.wrapper-articles div.wrapper-article footer.footer-article {
-  font-size: 14px;
-  font-weight: 300;
-  background: #842a84;
-  font-family: 'Roboto Slab', serif;
-}
-div.content div.wrapper-articles div.wrapper-article footer.footer-article a.more {
-  text-decoration: none;
-  padding: 10px;
-  color: #FFF;
-  background: #ff00ff;
-  float: right;
-}
-div.content div.wrapper-articles div.wrapper-article footer.footer-article a.more:hover {
-  color: #FFF;
-  background: #842a84;
-}
-div.content div.wrapper-articles div.wrapper-article footer.footer-article span.tags,
-div.content div.wrapper-articles div.wrapper-article footer.footer-article span.date {
-  color: #FFF;
-  float: left;
-  padding: 10px;
-}
-div.content div.wrapper-articles div.wrapper-article footer.footer-article span.tags a,
-div.content div.wrapper-articles div.wrapper-article footer.footer-article span.date a {
-  color: #FFF;
-}
-div.content div.wrapper-articles #infscr-loading {
-  width: 100%;
-  height: 30px;
-  position: absolute;
-  bottom: 0;
-  text-align: center;
-}
-div.content div.wrapper-articles #infscr-loading img {
-  display: none !important;
-}
-div.content div.wrapper-articles #infscr-loading .loader {
-  padding: 5px 0;
-  color: #333333;
-}
-div.content div.wrapper-articles #infscr-loading .loader img {
-  display: inline !important;
-  margin-right: 5px;
-}
+div.content h2.main-title { color: #FFF; font-size: 18px; padding-top: 16px; padding-bottom: 15px; font-weight: 300; background-color: #842a84; font-family: 'Roboto Slab', serif; margin-bottom: 0; }
+div.content img.wrapper-img { padding-top: 15px; padding-bottom: 15px; background-color: #FFF; }
+div.content div.wrapper-articles { padding-bottom: 30px; }
+div.content div.wrapper-articles div.wrapper-article article.main-article { color: #333333; padding-top: 15px; background: #efefef; }
+div.content div.wrapper-articles div.wrapper-article article.main-article p { padding-top: 10px; }
+div.content div.wrapper-articles div.wrapper-article article.main-event-article { background: #efefef; border: 1px solid #842a84; border-bottom: 3px solid #842a84; }
+div.content div.wrapper-articles div.wrapper-article footer.footer-article { font-size: 14px; font-weight: 300; background: #842a84; font-family: 'Roboto Slab', serif; }
+div.content div.wrapper-articles div.wrapper-article footer.footer-article a.more { text-decoration: none; padding: 10px; color: #FFF; background: #ff00ff; float: right; }
+div.content div.wrapper-articles div.wrapper-article footer.footer-article a.more:hover { color: #FFF; background: #842a84; }
+div.content div.wrapper-articles div.wrapper-article footer.footer-article span.tags, div.content div.wrapper-articles div.wrapper-article footer.footer-article span.date { color: #FFF; float: left; padding: 10px; }
+div.content div.wrapper-articles div.wrapper-article footer.footer-article span.tags a, div.content div.wrapper-articles div.wrapper-article footer.footer-article span.date a { color: #FFF; }
+div.content div.wrapper-articles #infscr-loading { width: 100%; height: 30px; position: absolute; bottom: 0; text-align: center; }
+div.content div.wrapper-articles #infscr-loading img { display: none !important; }
+div.content div.wrapper-articles #infscr-loading .loader { padding: 5px 0; color: #333333; }
+div.content div.wrapper-articles #infscr-loading .loader img { display: inline !important; margin-right: 5px; }
 
 /* -- Content end here ^_^ -- */
 /* -- Footer start here ^_^ -- */
-div.wrapper-footer {
-  border-top: 5px solid #842a84;
-  background-color: #efefef;
-}
-div.wrapper-footer footer.container p.bottom-footer {
-  border-top: 1px solid #d1d1d1;
-}
+div.wrapper-footer { border-top: 5px solid #842a84; background-color: #efefef; }
+div.wrapper-footer footer.container p.bottom-footer { border-top: 1px solid #d1d1d1; }
 
 /* -- Footer end here ^_^ -- */

@@ -46,7 +46,7 @@
 		</div>
 		<div class="row">
 			<section class="col-md-12 comments">
-				<?php comments_template( '', true ); ?>
+				<?php comments_template(); ?>
 			</section>
 		</div>
 	</div>
